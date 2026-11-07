@@ -1,0 +1,73 @@
+site_name: Веб-скрейпінг: збір, обробка та аналіз даних
+site_description: Навчальний факультатив для учнів 10–11 класів
+site_author: Автор курсу
+site_url: ""
+repo_name: web-scraping-course
+# Після створення репозиторію додайте адресу:
+# repo_url: https://github.com/USERNAME/web-scraping-course
+
+theme:
+  name: material
+  language: uk
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Увімкнути темну тему
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Увімкнути світлу тему
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Головна: index.md
+  - Навчальні модулі:
+      - Огляд модулів: modules/index.md
+      - "1. Вступ до веб-скрейпінгу": modules/module-01/index.md
+      - "2. HTML і структура сторінки": modules/module-02/index.md
+      - "3. Python для вебданих": modules/module-03/index.md
+      - "4. BeautifulSoup": modules/module-04/index.md
+      - "5. Збереження даних": modules/module-05/index.md
+      - "6. Очищення та обробка": modules/module-06/index.md
+      - "7. Аналіз даних": modules/module-07/index.md
+      - "8. Візуалізація": modules/module-08/index.md
+      - "9. Правові та етичні аспекти": modules/module-09/index.md
+      - "10. Підсумковий проєкт": modules/module-10/index.md
+  - Практичні роботи: practical/index.md
+  - Python-пісочниця: playground/index.md
+  - Самоперевірка: quizzes/index.md
+  - Словник: glossary.md
+
+copyright: "Навчальний матеріал. Умови використання див. у файлі LICENSE."

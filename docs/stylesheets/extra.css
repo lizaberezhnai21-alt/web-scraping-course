@@ -1,0 +1,30 @@
+:root {
+  --course-radius: 1rem;
+}
+.md-main__inner {
+  margin-top: 1.2rem;
+}
+.md-content__inner {
+  padding-bottom: 2rem;
+}
+.md-typeset .hero {
+  padding: 2rem;
+  margin: 1rem 0 2rem;
+  border-radius: var(--course-radius);
+  background: linear-gradient(125deg, #e8edff 0%, #f3eaff 100%);
+  color: #172554;
+}
+[data-md-color-scheme="slate"] .md-typeset .hero {
+  background: linear-gradient(125deg, #202b4a 0%, #34264c 100%);
+  color: #f4f5ff;
+}
+.md-typeset .hero h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+.md-typeset .grid.cards > ul > li {
+  border-radius: var(--course-radius);
+}
+.md-button {
+  border-radius: 0.65rem;
+}
